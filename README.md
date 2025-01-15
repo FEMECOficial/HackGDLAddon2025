@@ -7,14 +7,13 @@ Este proyecto utiliza un ESP32-C3 programado en CircuitPython para manejar un co
 
 ## Características principales
 1. **Modo Reguilete de Colores**: 
-   - Los Neopixels simulan una animación suave de respiración utilizando una gama de colores del arcoíris.
+   - Los Neopixels simulan una animación de un reguilete utilizando una gama de colores del arcoíris.
 
 2. **Modo Detección de Paquetes**:
-   - Los LEDs muestran visualmente la cantidad de paquetes WiFi detectados en tiempo real.
-   - El canal WiFi también se puede visualizar y cambia dinámicamente.
+   - Los LEDs muestran visualmente los paquetes WiFi detectados en cada canal en tiempo real.
 
 3. **Modo Redes Falsas (Fake WiFi)**:
-   - Crea múltiples puntos de acceso WiFi con nombres aleatorios.
+   - Crea un punto de acceso WiFi con nombre aleatorio.
    - Diseñado para pruebas de ciberseguridad o como parte de demostraciones.
 
 4. **Modo Morse**:
@@ -44,7 +43,7 @@ Este proyecto utiliza un ESP32-C3 programado en CircuitPython para manejar un co
    - Copia los archivos necesarios al directorio principal del ESP32.
 
 2. **Cargar el proyecto**:
-   - Asegúrate de tener los siguientes archivos en tu ESP32-C3:
+   - Asegúrate de tener los siguientes archivos en tu ESP32:
      - `code.py` (código principal).
      - Librerías requeridas dentro de la carpeta `lib/`.
 
@@ -62,11 +61,11 @@ El proyecto cuenta con múltiples modos, los cuales se pueden alternar presionan
    - Diseñado para mostrar efectos visuales interesantes.
 
 ### 2. **Modo Detección de Paquetes** (Modo 2):
-   - Los Neopixels visualizan la cantidad de paquetes WiFi detectados.
+   - Los Neopixels visualizan los paquetes WiFi detectados.
    - El canal WiFi es mostrado en la consola y los LEDs.
 
 ### 3. **Modo Redes Falsas** (Modo 3):
-   - Crea múltiples puntos de acceso WiFi con nombres falsos y aleatorios.
+   - Crea un punto de acceso WiFi con nombres falsos y aleatorios.
    - Ejemplo de nombres:
      - `HackGDL_Guest`
      - `CTF_Whaaa`
