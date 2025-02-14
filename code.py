@@ -32,7 +32,7 @@ ASCII_LETTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 DIGITS = "0123456789"
 
 # Configuracion de LEDS IR
-ir_led = pwmio.PWMOut(board.IO0, frequency=38000, duty_cycle=0)
+ir_led = pwmio.PWMOut(board.IO2, frequency=38000, duty_cycle=0)
 
 # Comandos en formato NEC (ejemplo: encendido y apagado)
 # Nota: Estos valores son de ejemplo
@@ -328,7 +328,7 @@ async def placeholder_mode(mode):
 # Función principal
 async def main():
     # Crear la tarea para manejar la interrupción del botón
-    button_task = asyncio.create_task(button_interrupt(board.IO2))
+    button_task = asyncio.create_task(button_interrupt(board.IO0))
 
     # Ejecutar los modos en paralelo
     await asyncio.gather(
